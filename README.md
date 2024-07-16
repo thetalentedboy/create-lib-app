@@ -15,17 +15,3 @@ dev - npm run dev / yarn dev
 build - npm run build / yarn build
 ```
 
-#### git 规范
-
-```
-npm run commit / yarn commit
-```
-
-### 组件列表
-
-- [ ] 支付
-- [ ] 邮费选择
-- [ ] 地址级联表单
-
-
-### 原生组件
