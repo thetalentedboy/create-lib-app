@@ -1,0 +1,27 @@
+.vp-doc h2 {
+    border-top: none;
+    margin: 10px 0 0 0;
+}
+
+/* 定义滚动条的宽度和背景颜色 */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+/* 定义滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+    border-radius:8px;
+    background-color: #bbbbbb;
+    /*background-image: -webkit-linear-gradient(*/
+    /*        45deg,*/
+    /*        rgba(255, 255, 255),*/
+    /*        transparent*/
+    /*);*/
+}
+
+/* 定义滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #EEE;
+}

@@ -1,0 +1,104 @@
+@import '../../assets/common';
+
+.Inputinput {
+	width: 100%;
+	position: relative;
+	font-size: 14px;
+	display: inline-block;
+
+	.Inputinput__inner {
+		-webkit-appearance: none;
+		background-color: #fff;
+		background-image: none;
+		border-radius: 4px;
+		border: 1px solid $color-border-primary;
+		box-sizing: border-box;
+		color: $color-text-primary;
+		display: inline-block;
+		font-size: inherit;
+		height: 30px;
+		line-height: 30px;
+		outline: none;
+		padding: 0 15px;
+		transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+		width: 100%;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+			border-color: $primary-color;
+		}
+
+
+		&::placeholder {
+			color: $placeholder-color;
+		}
+	}
+
+
+	.Inputinput__suffix {
+		position: absolute;
+		height: 100%;
+		right: 5px;
+		top: 0;
+		text-align: center;
+		color: #c0c4cc;
+		transition: all .3s;
+		pointer-events: all;
+
+		& .Inputinput__icon {
+			width: 14px;
+			height: 100%;
+			line-height: 35px;
+			cursor: pointer;
+			transition: color .2s cubic-bezier(.645, .045, .355, 1);
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.Inputinput__prefix {
+		position: absolute;
+		height: 100%;
+		left: 5px;
+		top: -1px;
+		text-align: center;
+		color: #C0C4CC;
+		transition: all .3s;
+
+		& .Inputinput__icon {
+			width: 20px;
+			height: 100%;
+			line-height: 35px;
+			cursor: pointer;
+			transition: color .2s cubic-bezier(.645, .045, .355, 1);
+			display: flex;
+			justify-content: center;
+
+			& svg {
+				width: 14px;
+			}
+		}
+
+	}
+
+}
+
+.Inputinput--prefix {
+	& .Inputinput__inner {
+		padding-left: 25px;
+	}
+}
+
+.is-disabled {
+
+	& .Inputinput__inner {
+		background-color: $disabled-bg-color;
+		cursor: not-allowed;
+	}
+
+	& .Inputinput__inner:focus {
+		outline: none;
+		border-color: $disabled-border-color;
+	}
+}

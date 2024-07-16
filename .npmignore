@@ -1,0 +1,11 @@
+# 忽略目录
+examples/
+utils/
+src/
+
+# 忽略指定文件
+babel.config.js
+rollup.config.mjs
+.eslintrc.js
+index.ts
+*.map
